@@ -2,7 +2,6 @@
 
 /* === תיקון overflow גלובלי === */
 html, body {
-  overflow-x: hidden !important;
   max-width: 100% !important;
   overflow-y: auto !important;
   scrollbar-width: none !important;
