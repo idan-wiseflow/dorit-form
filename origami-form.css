@@ -37,9 +37,21 @@ body,
 
 /* === עטיפה ראשית === */
 .entity.container-fluid {
-  padding: 12px !important;
-  max-width: 600px;
+  padding: 12px 6px !important;
+  max-width: 100% !important;
   margin: 0 auto;
+  box-sizing: border-box !important;
+}
+
+/* === תיקון lightbox clipping === */
+.field_group_body.row,
+.field_group_body {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
 }
 
 /* === קבוצת שדות === */
