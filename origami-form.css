@@ -46,7 +46,7 @@ body,
 
 /* === עטיפה ראשית === */
 .entity.container-fluid {
-  padding: 12px 20px !important;
+  padding: 12px 40px !important;
   max-width: 100% !important;
   margin: 0 auto;
   box-sizing: border-box !important;
@@ -57,8 +57,8 @@ body,
 .field_group_body {
   margin-right: 0 !important;
   margin-left: 0 !important;
-  padding-right: 16px !important;
-  padding-left: 16px !important;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
   box-sizing: border-box !important;
   width: 100% !important;
 }
