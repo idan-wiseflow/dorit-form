@@ -55,12 +55,13 @@ body,
 /* === תיקון lightbox clipping === */
 .field_group_body.row,
 .field_group_body {
+  width: 80% !important;
   margin-right: 0 !important;
-  margin-left: 0 !important;
-  padding-right: 24px !important;
-  padding-left: 24px !important;
+  margin-left: auto !important;
+  padding: 16px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   box-sizing: border-box !important;
-  width: 100% !important;
 }
 
 /* === קבוצת שדות === */
@@ -156,7 +157,7 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-  width: 80% !important;
+  width: 100% !important;
   box-sizing: border-box !important;
   padding: 10px 12px !important;
   border: 1.5px solid #c8d6e0 !important;
@@ -169,8 +170,6 @@ select {
   transition: border-color 0.2s;
   -webkit-appearance: none;
   appearance: none;
-  display: block !important;
-  margin-right: auto !important;
 }
 
 input[type="text"]:focus,
@@ -191,9 +190,7 @@ textarea.text-area-field {
 
 /* === Select2 === */
 .select2-container {
-  width: 80% !important;
-  display: block !important;
-  margin-right: auto !important;
+  width: 100% !important;
 }
 
 .select2-choice {
@@ -238,7 +235,9 @@ textarea.text-area-field {
 .btn-final-submit,
 .btn-success.btn-final-submit {
   display: block !important;
-  width: 100% !important;
+  width: 80% !important;
+  margin-right: 0 !important;
+  margin-left: auto !important;
   padding: 14px !important;
   font-size: 16px !important;
   font-weight: 600 !important;
