@@ -156,7 +156,7 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-  width: 100% !important;
+  width: 80% !important;
   box-sizing: border-box !important;
   padding: 10px 12px !important;
   border: 1.5px solid #c8d6e0 !important;
@@ -169,6 +169,8 @@ select {
   transition: border-color 0.2s;
   -webkit-appearance: none;
   appearance: none;
+  display: block !important;
+  margin-right: auto !important;
 }
 
 input[type="text"]:focus,
@@ -189,7 +191,9 @@ textarea.text-area-field {
 
 /* === Select2 === */
 .select2-container {
-  width: 100% !important;
+  width: 80% !important;
+  display: block !important;
+  margin-right: auto !important;
 }
 
 .select2-choice {
