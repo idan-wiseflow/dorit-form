@@ -40,11 +40,26 @@ body,
 }
 
 /* === שורות שדות === */
-.form_data_element_wrap {
+.form_data_element_wrap,
+.form_data_element_wrap[style],
+.inputrow,
+.inputrow[style] {
   width: 100% !important;
   max-width: 100% !important;
+  min-width: 0 !important;
   padding: 0 0 14px 0 !important;
   float: none !important;
+  flex: 0 0 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* === תיקון row שלא יחתוך === */
+.field_group_body.row {
+  overflow: visible !important;
+}
+
+.field_group_body > .ng-scope {
+  width: 100% !important;
 }
 
 /* === תוויות === */
