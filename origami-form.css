@@ -1,9 +1,33 @@
 /* Origami Form - Mobile Hebrew RTL */
 
+/* === תיקון overflow גלובלי === */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+
+/* === תיקון Bootstrap columns === */
+.col-sm-6,
+.col-md-4,
+[class*="col-"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  overflow-x: hidden !important;
+}
+
 /* === כללי === */
 body,
 .entity,
 .webforms_form {
+  overflow-x: hidden !important;
   direction: rtl;
   font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 16px;
@@ -32,11 +56,38 @@ body,
   margin-bottom: 12px;
 }
 
+/* === מניעת גלילה אופקית === */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+.entity.container-fluid,
+.webform_wizard_content,
+.step-app-container,
+.step-app,
+.step-content,
+.step-tab-panel,
+.field_group,
+.ng-scope {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* === ביטול margin שלילי של Bootstrap row === */
+.field_group_body.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
 /* === גוף הקבוצה === */
 .field_group_body {
   padding: 16px !important;
   border-radius: 12px !important;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
 }
 
 /* === שורות שדות === */
